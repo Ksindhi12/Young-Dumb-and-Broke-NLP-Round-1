@@ -1,6 +1,7 @@
 from pre_processing import runPreprocessing
 from tokenization import runTokenization
 from stop_words_removal import removeStopWords
+from freq_distribution_of_tokens import PrintFrequencyDistribution, VisualiseFrequencyDistribution
 
 orignalFile = open('Pride_and_Prejudice.txt', 'r')
 content = orignalFile.read()
@@ -14,6 +15,10 @@ for i in preprocessedTextChapters:
 tokenizedText = runTokenization(preprocessedText)
 print(len(removeStopWords(tokenizedText)))
 
+tokenisedTextWithoutStopwords = removeStopWords(tokenizedText)
+
+PrintFrequencyDistribution(tokenisedTextWithoutStopwords)
+VisualiseFrequencyDistribution(tokenisedTextWithoutStopwords)
 
 
 

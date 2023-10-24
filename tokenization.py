@@ -1,5 +1,5 @@
 import nltk
-# nltk.download()
+nltk.download('punkt')
 
 def runTokenization(text:str):
     return nltk.tokenize.word_tokenize(text)
