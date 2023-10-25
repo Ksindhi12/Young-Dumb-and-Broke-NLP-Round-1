@@ -37,7 +37,7 @@ def splitChapters(text:str) -> list:
 
     listOfChapters = replacedText.split("////////")
     
-    # This removes everything befre the chapter 1 (preface, about author, etc)
+    # This removes everythong befre the chapter 1 (preface, about author, etc)
 
     listOfChapters.pop(0)
 
